@@ -16,37 +16,65 @@
 </head>
 <body>
 
-  Contact Us
+  <main>
+    <div class="card">
+      <form action="submit">
+        <h1>Contact Us</h1>
 
-  First Name
-  This field is required
+        <div class="row two-col">
+          <label for="first-name"><span class='text'> First Name</span>
+            <input type="text" id="first-name" required>
+            <span class="errmsg" id="first-name-err">This field is required</span>
+          </label>
+          <label for="last-name"><span class='text'>Last Name</span>
+            <input type="text" id="last-name" required>
+            <span class="errmsg" id="last-name-err">This field is required</span>
+          </label>
+        </div>
 
-  Last Name
-  This field is required
+        <label for="email"><span class='text'>Email Address</span>
+          <input type="email" name="email" id="email" required>
+          <span class="errmsg" id="email-err">Please enter a valid email address</span>
+        </label>
 
-  Email Address
-  Please enter a valid email address
-  This field is required
+        <label for="type"><span class='text'>Query Type</span>
+          <div class="row two-col">
+            <span class="box radio-container"><input type="radio" name="radio" id="general"><span class="customradio"></span><span class="radiotext">General Enquiry</span></span>
+            <span class="box radio-container"><input type="radio" name="radio" id="support"><span class="customradio"></span><span class="radiotext">Support Request</span></span>
+          </div>
+          <span class="errmsg" id="radioerr">Please select a query type</span>
+        </label>
 
-  Query Type
-  General Enquiry
-  Support Request
-  Please select a query type
+        <label for="message"><span class='text'>Message</span>
+          <textarea name="message" id="message" required></textarea>
+          <span class="errmsg">This field is required</span>
+        </label>
+      
 
-  Message
-  This field is required
+        <label for="check">
+          <div class="row">
+            <input type="checkbox" name="check" id="check"><span class="labelcheckbox"></span>
+            <span class='text'>I consent to being contacted by the team</span>
+          </div>          
+          <span class="errmsg" id="checkerr">To submit this form, please consent to being contacted</span>
+        </label>
 
-  I consent to being contacted by the team
-  To submit this form, please consent to being contacted
+        <button type="submit" >Submit</button>
 
-  Submit
-
-  Message Sent!
-  Thanks for completing the form. We'll be in touch soon!
+        <div class="success-msg">
+          <div class="row">
+            <img src="./assets/images/icon-success-check.svg" alt="">
+            <h2>Message Sent!</h2>
+          </div>
+          <p>Thanks for completing the form. We'll be in touch soon!</p>
+        </div>
+      </form>
+    </div>
+  </main>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://ermiyas.com">Ermiyas Tilahun</a>.
   </div>
 </body>
 </html>
