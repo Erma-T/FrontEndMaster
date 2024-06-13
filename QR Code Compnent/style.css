@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
 body {
     align-items: center;
     background-color: hsl(212, 45%, 89%);
     display: flex;
-    font-family: "Outfit", serif;
+    font-family: 'Outfit', serif;
     font-size: 15px;
     justify-content: center;
     min-height: 100vh;
@@ -12,18 +14,19 @@ body {
   
   .card {
     background-color: hsl(0, 0%, 100%);
-    border-radius: 15px;
+    border-radius: 10px;
     box-shadow: 0 10px 40px hsla(220, 15%, 55%);
     padding: 18px;
     top: 25%;
     text-align: center;
-    width: 375px;
+    max-width: 280px;
   }
   
   img {
-    border-radius: 15px;
-    height: 375px;
-    width: 375px;
+    width: 100%;
+    border-radius: 10px;
+    max-height: 288px;
+    max-width: 2885px;
   }
   
   h1 {
